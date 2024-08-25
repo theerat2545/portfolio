@@ -11,7 +11,13 @@ const translations = {
         a1: "",
         a2: "",
         a3: "",
-        sskills: "",
+        sskills: "My Skills",
+        sportfolio: "Portfolio",
+        pro1: "Project 1",
+        sexperience: "Experience",
+        internship: "Web Developer (Internship)",
+        scontact: "Contact Me",
+        mail: "Email: teeratchoktaweesad@gmail.com",
     },
     th: {
         tabout: "เกี่ยวกับ",
@@ -22,6 +28,16 @@ const translations = {
         me: "ผม",
         name: "นายธีรัตม์ โชคทวีเศรษฐ์ (ธีรัตม์)",
         sabout: "เกี่ยวกับ",
+        a1: "",
+        a2: "",
+        a3: "",
+        sskills: "ทักษะ",
+        sportfolio: "แฟ้มสะสมผลงาน",
+        pro1: "โปรเจค 1",
+        sexperience: "ประสบการณ์",
+        internship: "Web Developer (สหกิจศึกษา)",
+        scontact: "ติดต่อ",
+        mail: "อีเมล: teeratchoktaweesad@gmail.com",
     }
 };
 
@@ -43,5 +59,15 @@ function switchLanguage(language) {
     document.getElementById('me').textContent = translations[language].me;
     document.getElementById('name').textContent = translations[language].name;
     document.getElementById('sabout').textContent = translations[language].sabout;
+    document.getElementById('a1').textContent = translations[language].a1;
+    document.getElementById('a2').textContent = translations[language].a2;
+    document.getElementById('a3').textContent = translations[language].a3;
+    document.getElementById('sskills').textContent = translations[language].sskills;
+    document.getElementById('sportfolio').textContent = translations[language].sportfolio;
+    document.getElementById('pro1').textContent = translations[language].pro1;
+    document.getElementById('sexperience').textContent = translations[language].sexperience;
+    document.getElementById('internship').textContent = translations[language].internship;
+    document.getElementById('scontact').textContent = translations[language].scontact;
+    document.getElementById('mail').textContent = translations[language].mail;
    
 }
