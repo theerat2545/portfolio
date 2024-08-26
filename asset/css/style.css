@@ -111,9 +111,15 @@ body {
 /* Header Styles */
 header {
     background-color: #23272a;
-    padding: 20px;
+    padding: 0 20px;
     text-align: center;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 header nav ul {
     list-style-type: none;
@@ -128,6 +134,11 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color:var(--accent-color); 
 }
 
 /* grid */
@@ -149,8 +160,8 @@ header nav ul li a {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
 }
 .switch input {
     opacity: 0;
@@ -167,18 +178,23 @@ header nav ul li a {
     background-color: var(--border-color);
     transition: 0.4s;
 }
+
+.slider:hover{
+    background-color: var(--accent-color);
+}
+
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: white;
     transition: 0.4s;
 }
 input:checked + .slider {
-    background-color: var(--info-color);
+    background-color: var(--accent-color);
 }
 input:checked + .slider:before {
     transform: translateX(26px);
@@ -190,18 +206,37 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.header-info h1 {
+.me-info h1 {
     margin: 10px 0;
 }
 
-.header-info p {
-    margin: 0;
+.me-info p {
+    margin: 0 0 30px 0;
+}
+
+/* Me Section */
+#me {
+    padding: 10px;
+    text-align: center;
+    background-color: #2f3136;
 }
 
 /* About Section */
 #about {
     padding: 50px;
     text-align: center;
+}
+
+.about-frame {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.about-frame-item {
+    /* background-color: #1abc9c; */
+    padding: 20px;
+    border-radius: 5px;
 }
 
 /* Skills Section */
@@ -213,7 +248,7 @@ input:checked + .slider:before {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 40px;
     justify-items: center;
 }
 
@@ -279,7 +314,7 @@ input:checked + .slider:before {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-items: center;
 }
@@ -291,3 +326,16 @@ input:checked + .slider:before {
     border-radius: 5px;
     text-align: center;
 }
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-left {
+    text-align: left;
+}
+

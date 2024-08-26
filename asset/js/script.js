@@ -18,6 +18,10 @@ const translations = {
         internship: "Web Developer (Internship)",
         scontact: "Contact Me",
         mail: "Email: teeratchoktaweesad@gmail.com",
+        tel: "Tel: 0909318505 or 0910272212",
+        line: "LineID: theerat3624",
+        address: "",
+        currentAddress: "",
     },
     th: {
         tabout: "เกี่ยวกับ",
@@ -38,6 +42,10 @@ const translations = {
         internship: "Web Developer (สหกิจศึกษา)",
         scontact: "ติดต่อ",
         mail: "อีเมล: teeratchoktaweesad@gmail.com",
+        tel: "โทร: 0909318505 หรือ 0910272212",
+        line: "ไลน์ไอดี: theerat3624",
+        address: "",
+        currentAddress: "",
     }
 };
 
@@ -69,5 +77,9 @@ function switchLanguage(language) {
     document.getElementById('internship').textContent = translations[language].internship;
     document.getElementById('scontact').textContent = translations[language].scontact;
     document.getElementById('mail').textContent = translations[language].mail;
+    document.getElementById('tel').textContent = translations[language].tel;
+    document.getElementById('line').textContent = translations[language].line;
+    document.getElementById('address').textContent = translations[language].address;
+    document.getElementById('currentAddress').textContent = translations[language].currentAddress;
    
 }
