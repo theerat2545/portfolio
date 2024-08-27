@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const fadeInElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target); // หยุดสังเกตเมื่อแสดงแล้ว
+            }
+        });
+    }, {
+        threshold: 0.2 // แสดงเมื่อเห็น 20% ขององค์ประกอบ
+    });
+
+    fadeInElements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
 const translations = {
     en: {
         tabout: "About",
