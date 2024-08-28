@@ -103,6 +103,10 @@
     margin-left: 20px;
 }
 
+.m-10 {
+    margin: 5px;
+}
+
 html,body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -123,6 +127,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    
 }
 
 
@@ -138,12 +143,14 @@ header nav ul li {
 
 header nav ul li a {
     color: #fff;
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
     color:#f39c12; 
+    font-size: 16px;
 }
 
 /* grid */
@@ -421,12 +428,17 @@ input:checked + .slider:before {
     color: #f39c12;
 }
 
-a{
+.ex {
     color: #ffffff;
     font-size: 18px;
     display: flex;
     justify-content: end;
     margin-right: 30px;
+}
+
+.cer {
+    color: #ffffff;
+    font-size: 18px;
 }
 
 a:hover{
