@@ -103,11 +103,38 @@
     margin-left: 20px;
 }
 
+.ms-50 {
+    margin-left: 50px;
+}
+
+.me-50 {
+    margin-right: 50px;
+}
+
+.ms-100 {
+    margin-left: 100px;
+}
+
 .m-10 {
     margin: 5px;
 }
 
+.contact-flex {
+    display: flex;
+    margin: 5px 10px;
+}
+
 html,body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--background-black);
+    color: var(--white-color);
+    overflow-x: hidden;
+}
+
+html,body::after {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -226,6 +253,10 @@ input:checked + .slider:before {
     margin: 0 0 30px 0;
 }
 
+.m-none {
+    margin: 10px 0 0 0;
+}
+
 /* Me Section */
 #me {
     padding: 10px;
@@ -308,8 +339,15 @@ input:checked + .slider:before {
     gap: 15px;
 }
 
+.port-item-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
 .portfolio-item img {
-    width: 100%;
+    width: 50px;
     height: auto;
     border-radius: 5px;
 }
@@ -348,6 +386,13 @@ input:checked + .slider:before {
     padding: 50px;
     text-align: center;
     background-color: #2f3136;
+}
+
+/* Thank Section */
+#thank {
+    padding: 20px;
+    text-align: center;
+    background-color: #23272a;
 }
 
 .contact-grid {
@@ -433,7 +478,14 @@ input:checked + .slider:before {
     font-size: 18px;
     display: flex;
     justify-content: end;
-    margin-right: 30px;
+    /* margin-right: 30px; */
+}
+
+.p-link {
+    color: #ffffff;
+    font-size: 18px;
+    display: flex;
+    justify-content: end;
 }
 
 .cer {

@@ -71,7 +71,9 @@ const translations = {
         e14: "",
         e15: "GPA 3.39",
         sportfolio: "Portfolio",
-        pro1: "Project 1",
+        pro1: "Final Project: Answer Checking and Quality Processing System",
+        git: "GitHub",
+        doc: "Documents",
         sexperience: "Experience",
         internship: "Mango Consultant Co., Ltd. (November 1, 2023 - February 16, 2024)",
         ex1: "Web Developer (Internship)",
@@ -87,6 +89,7 @@ const translations = {
         c4: "* Living Online",
         scontact: "Contact Me",
         mail: "Email: teeratchoktaweesad@gmail.com",
+        github: "GitHub: https://github.com/theerat2545",
         line: "LineID: theerat3624",
         tel1: "Tel: 0909318505 ",
         tel2: "Tel: 0910272212",
@@ -100,6 +103,7 @@ const translations = {
         ca2: "Thongprasert, Rama 9 Road,",
         ca3: "Huamark Sub-district, Bangkapi",
         ca4: "District, Bangkok, 10240",
+        thankYou: "Thank You",
     },
     th: {
         tabout: "เกี่ยวกับ",
@@ -154,7 +158,9 @@ const translations = {
         e14: "",
         e15: "เกรดเฉลี่ย 3.39",
         sportfolio: "แฟ้มสะสมผลงาน",
-        pro1: "โปรเจค 1",
+        pro1: "โปรเจคจบ: ระบบตรวจสอบคำตอบและประมวลผลคุณภาพข้อสอบ",
+        git: "กิตฮับ",
+        doc: "เอกสาร",
         sexperience: "ประสบการณ์",
         internship: "บริษัท แมงโก้ คอนซัลแตนท์ จำกัด (1 พฤศจิกายน 2566 - 16 กุมภาพันธ์ 2567)",
         ex1: "นักพัฒนาเว็บไซต์ (ฝึกงาน)",
@@ -170,6 +176,7 @@ const translations = {
         c4: "* การใช้งานอินเทอร์เน็ต และการสื่อสารสังคมออนไลน์",
         scontact: "ติดต่อ",
         mail: "อีเมล: teeratchoktaweesad@gmail.com",
+        github: "กิตฮับ: https://github.com/theerat2545",
         line: "ไลน์ไอดี: theerat3624",
         tel1: "โทร: 0909318505",
         tel2: "โทร: 0910272212",
@@ -183,6 +190,7 @@ const translations = {
         ca2: "ทองประเสริฐ, ถนนพระราม 9,",
         ca3: "แขวงหัวหมาก, เขตบางกะปิ",
         ca4: "กรุงเทพฯ, 10240",
+        thankYou: "ขอบคุณครับ",
     },
     
 };
@@ -250,6 +258,8 @@ function switchLanguage(language) {
     document.getElementById('e15').textContent = translations[language].e15;
     document.getElementById('sportfolio').textContent = translations[language].sportfolio;
     document.getElementById('pro1').textContent = translations[language].pro1;
+    document.getElementById('git').textContent = translations[language].git;
+    document.getElementById('doc').textContent = translations[language].doc;
     document.getElementById('sexperience').textContent = translations[language].sexperience;
     document.getElementById('internship').textContent = translations[language].internship;
     document.getElementById('ex1').textContent = translations[language].ex1;
@@ -265,6 +275,7 @@ function switchLanguage(language) {
     document.getElementById('c4').textContent = translations[language].c4;
     document.getElementById('scontact').textContent = translations[language].scontact;
     document.getElementById('mail').textContent = translations[language].mail;
+    document.getElementById('github').textContent = translations[language].github;
     document.getElementById('tel1').textContent = translations[language].tel1;
     document.getElementById('tel2').textContent = translations[language].tel2;
     document.getElementById('line').textContent = translations[language].line;
@@ -278,5 +289,6 @@ function switchLanguage(language) {
     document.getElementById('ca2').textContent = translations[language].ca2;
     document.getElementById('ca3').textContent = translations[language].ca3;
     document.getElementById('ca4').textContent = translations[language].ca4;
+    document.getElementById('thankYou').textContent = translations[language].thankYou;
 }
 
