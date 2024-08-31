@@ -388,7 +388,7 @@ input:checked + .slider:before {
 
 /* Contact Section */
 #contact {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     background-color: #2f3136;
 }
@@ -695,7 +695,7 @@ div>i {
     }
 
     .frame-item-1,.frame-item-2,.frame-item-3 {
-        padding: 10px!important;
+        padding: 5px!important;
     }
 
     #portfolio {
