@@ -330,7 +330,7 @@ input:checked + .slider:before {
 
 /* Portfolio Section */
 #portfolio {
-    padding: 50px;
+    padding: 20px 30px;
 }
 
 .portfolio-grid {
@@ -354,11 +354,16 @@ input:checked + .slider:before {
 
 .portfolio-item p {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 /* Experience Section */
-#experience,#education {
+#education {
+    padding: 20px 30px 20px 30px;
+    background-color: #23272a;
+}
+
+#experience {
     padding: 50px;
     background-color: #23272a;
 }
@@ -413,7 +418,7 @@ input:checked + .slider:before {
 .timeline {
     position: relative;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
     border-left: 2px solid #7f8c8d;
 }
@@ -428,7 +433,7 @@ input:checked + .slider:before {
     margin-bottom: 0;
 }
 
-.timeline-date {
+.timeline-date,.timeline-date-port {
     position: absolute;
     left: -90px;
     top: 0;
@@ -452,6 +457,18 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+.timeline-item-port::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #f39c12;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+}
+
 .timeline-content {
     width: fit-content;
     background-color: #3b3b3b;
@@ -460,13 +477,31 @@ input:checked + .slider:before {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+.timeline-content-port {
+    width: fit-content;
+    background-color: #3b3b3b;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+.timeline-item-port {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    justify-content: center; /* จัดให้อยู่ตรงกลาง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+
 .timeline-content h3 {
-    margin: 0;
+    margin: 10px;
     font-size: 20px;
 }
 
 .timeline-content p {
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .timeline-content p strong,strong {
@@ -527,6 +562,7 @@ a:hover{
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.03s; 
+    margin-left: 0;
 }
 
 div>i {
@@ -535,10 +571,19 @@ div>i {
 
 /* Responsive for Samsung A55 */
 @media only screen and (max-width: 500px) {
+    header {
+        padding-left: 0!important;
+    }
+    
     header nav ul li {
         display: block;
         text-align: center;
         margin: 10px 0;
+    }
+
+    #education {
+        padding: 20px 30px 20px 30px;
+        background-color: #23272a;
     }
 
     .grid-container {
@@ -546,12 +591,14 @@ div>i {
         padding: 5px;
     }
 
+
     .timeline-date,.timeline-item::before {
-        display: none;
+        display: gride;
     }
 
     .timeline-content {
         width:fit-content;
+        margin: 0;
     }
 
     div.timeline-item, div.timeline.fade-in.show {
@@ -563,9 +610,13 @@ div>i {
     }
 
     video {
-        width: 170px;
-        height: 100px;
-        padding: 5px 5px 5px 0!important;
+        width: 270px;
+        height: 170px;
+        padding: 10px!important;
+    }
+
+    .frame-item-1,.frame-item-2,.frame-item-3 {
+        padding: 10px!important;
     }
 
     .port-item-grid {
@@ -574,12 +625,22 @@ div>i {
         width: 170px;
     }
 
+    
+
+    .timeline-date,.timeline-date-port {
+        display: none;
+    }
+
+    .timeline-item-port::before {
+        display: none;
+    }
+
     .edu-frame-item {
         padding: 0;
     }
 
     .timeline {
-        border-left:none;
+        border-left: none;
     }
 
     .skills-grid {
@@ -623,12 +684,14 @@ div>i {
         padding: 5px;
     }
 
-    .timeline-date,.timeline-item::before {
-        display: none;
+    .timeline-item::before {
+        display: grid;
+        left: -60px;
     }
 
     .timeline-content {
         width:fit-content;
+        margin: 0;
     }
 
     .frame-item-1,.frame-item-2,.frame-item-3 {
@@ -636,7 +699,7 @@ div>i {
     }
 
     #portfolio {
-        padding: 15px;
+        padding: 20px 30px;
     }
 
     h2{
@@ -652,9 +715,9 @@ div>i {
     }
 
     video {
-        width: 170px;
-        height: 100px;
-        padding: 5px 5px 5px 0!important;
+        width: 250px;
+        height: 150px;
+        padding: 10px!important;
     }
 
     .port-item-grid {
@@ -663,12 +726,16 @@ div>i {
         width: 170px;
     }
 
-    .edu-frame-item {
-        padding: 0;
+    .edu-frame {
+        margin: 0;
+    }
+
+    .timeline-date{
+        display: none;
     }
 
     .timeline {
-        border-left:none;
+        border-left: none;
     }
 
     .skills-grid {
@@ -691,6 +758,7 @@ div>i {
         gap: 15px;
     }
 
+
     div#con1{
         padding: 10px;
     }
@@ -698,11 +766,6 @@ div>i {
     div>i {
         padding: 10px 10px 10px 0;
     }
-
-    .timeline {
-        padding: 10px;
-    }
-
     .timeline-item {
         padding-left: 20px;
     }
