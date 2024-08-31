@@ -94,10 +94,10 @@ const translations = {
         tel1: "Tel: 0909318505 ",
         tel2: "Tel: 0910272212",
         raddress: "Registered Address",  
-        r1: "78, Village No. 8, Ban Agean,",                          
-        r2: "Nong Yai Sub-district, Satuek",                          
-        r3: "District, Buriram Province,",                          
-        r4: "31150",                                 
+        ra1: "78, Village No. 8, Ban Agean,",                          
+        ra2: "Nong Yai Sub-district, Satuek",                          
+        ra3: "District, Buriram Province,",                          
+        ra4: "31150",                                 
         currentAddress: "Current Address",
         ca1: "340/3, KT Apartment, Soi",
         ca2: "Thongprasert, Rama 9 Road,",
@@ -181,10 +181,10 @@ const translations = {
         tel1: "โทร: 0909318505",
         tel2: "โทร: 0910272212",
         raddress: "ที่อยู่ตามทะเบียนบ้าน",  
-        r1: "78 หมู่ 8 บ้านอาเจียน,",                          
-        r2: "ตำบลหนองใหญ่ อำเภอสตึก",                          
-        r3: "จังหวัดบุรีรัมย์,",                          
-        r4: "31150",                                 
+        ra1: "78 หมู่ 8 บ้านอาเจียน,",                          
+        ra2: "ตำบลหนองใหญ่ อำเภอสตึก",                          
+        ra3: "จังหวัดบุรีรัมย์,",                          
+        ra4: "31150",                                 
         currentAddress: "ที่อยู่ปัจจุบัน",
         ca1: "340/3, KT อพาร์ทเมนท์, ซอย",
         ca2: "ทองประเสริฐ, ถนนพระราม 9,",
@@ -280,10 +280,10 @@ function switchLanguage(language) {
     document.getElementById('tel2').textContent = translations[language].tel2;
     document.getElementById('line').textContent = translations[language].line;
     document.getElementById('raddress').textContent = translations[language].raddress;
-    document.getElementById('r1').textContent = translations[language].r1;
-    document.getElementById('r2').textContent = translations[language].r2;
-    document.getElementById('r3').textContent = translations[language].r3;
-    document.getElementById('r4').textContent = translations[language].r4;
+    document.getElementById('ra1').textContent = translations[language].ra1;
+    document.getElementById('ra2').textContent = translations[language].ra2;
+    document.getElementById('ra3').textContent = translations[language].ra3;
+    document.getElementById('ra4').textContent = translations[language].ra4;
     document.getElementById('currentAddress').textContent = translations[language].currentAddress;
     document.getElementById('ca1').textContent = translations[language].ca1;
     document.getElementById('ca2').textContent = translations[language].ca2;
