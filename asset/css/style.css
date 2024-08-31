@@ -705,6 +705,10 @@ div>i {
     h2{
         font-size: 16px;
     }
+   
+    h2#socailSkills,h2#typeingSkills,h2#languageSkills{
+        font-size: 14px;
+    }
 
     div.timeline-item, div.timeline.fade-in.show {
         padding: 0;
