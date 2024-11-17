@@ -119,6 +119,10 @@
     margin: 5px;
 }
 
+.mt-3 {
+    margin-top: 30px;
+}
+
 .contact-flex {
     display: flex;
     margin: 5px 10px;
@@ -355,6 +359,10 @@ input:checked + .slider:before {
 .portfolio-item p {
     text-align: center;
     margin-top: 0;
+}
+
+#root {
+    width: 500px;
 }
 
 /* Experience Section */
@@ -774,7 +782,5 @@ div>i {
         padding-left: 20px;
     }
 }
-
-
 
 
