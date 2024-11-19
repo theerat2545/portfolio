@@ -690,7 +690,7 @@ div>i {
 
     #root {
         width: 300px;
-        padding: 20px 15px!important;
+        padding: 15px!important;
     }
 }
 
@@ -799,6 +799,7 @@ div>i {
 
     #root {
         width: 250px;
+        padding: 10px!important;
     }
 }
 
